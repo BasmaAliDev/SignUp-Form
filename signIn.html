@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignUp Form</title>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/index_style.css">
+
+
+</head>
+<body>
+   <header>
+      <div class="container mt-5">
+        <div class="row justify-content-center">
+          <div id="welcomScreen" class="content  pb-5 mt-5 w-50 shadow-lg px-5">
+            
+              <h1 class="text-center my-4 text-light">Login</h1>
+            
+            <div>
+              <div class="form-group">
+                  <input type="email" class="form-control" id="inputEmail" aria-describedby="emailHelp" placeholder="Enter Your Email">
+             <p id="incorrectEmail" class="alert-danger rounded-sm p-2 d-none ">  Invalid Email Address!</p>
+                </div>
+                <div class="form-group">
+                    <input type="password" class="form-control" id="inputPass" placeholder="Enter Your Password">
+                    <p id="rong"class="alert-danger rounded-sm p-2 d-none">Password must be 5 charachters at least Cannot contain special charachters</p>
+                </div>
+                <div id="invalidLogin" class="d-none">
+                  <p class="text-center text-danger"> invalid email or password Please try again!</p>
+                </div>
+                
+                <button  type="submit" onclick="Login()" class="btn btn-info w-100" id="Login">Login</button>
+            </div>
+            <p class="text-center mt-3 text-light">Don’t have an account?<a href="index.html" class="text-light">  Sign Up</a> </p>
+            </div>
+          </div>
+             
+        </div>
+   
+  </header>
+
+
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

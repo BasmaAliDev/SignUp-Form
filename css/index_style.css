@@ -1,0 +1,15 @@
+body
+{
+    font-family: "segoe ui light";
+
+    background-image: url(../image/bg.jpg);
+    background-position: center center;
+    background-size: cover;
+}
+.content{
+    background-color: rgba(85, 84, 82, 0.6);
+}
+.fixed-top{
+    right: 0;
+    width: 100px;
+}

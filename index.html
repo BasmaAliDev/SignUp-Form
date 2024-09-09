@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Create an account using this signup form. Users can register with their name, email, and password and proceed to login.">
+    <meta name="keywords" content="SignUp, Login, User Registration, Account, Sign Up Form, Create Account">
+    <title>User SignUp Form</title>
+    <link rel="icon" href="image/login.jpg">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/index_style.css">
+
+
+</head>
+<body>
+   <header>
+      <div class="container mt-5">
+        <div class="row justify-content-center">
+          <div id="signUpScreen" class="content  pb-5 mt-5 w-50 shadow-lg px-5">
+            
+              <h1 class="text-center my-4 text-light ">SignUp</h1>
+            
+            <div>
+              <div class="form-group">
+                <input type="text" class="form-control" id="userNameInput" placeholder="Enter Your Name">
+           <p id="messOfInValidName" class="erorr alert-danger rounded-sm  p-2 d-none">Username must start with capital letter and contains at least 3 letters</p>
+             
+              </div>
+              <div class="form-group">
+                <input type="email" class="form-control " id="emailInput" aria-describedby="emailHelp" placeholder="Enter Your Email">
+                <p  id="messOfInValidEmail" class="alert-danger rounded-sm  p-2 d-none">  Invalid Email Address!</p>
+                <p id="existEmail" class="d-none text-center text-danger"> This Email Already Existing</p>   
+          </div>
+              <div class="form-group">
+                  <input type="password" class="form-control " id="PasswordInput" placeholder="Enter Your Password">
+                  <p id="messOfInValidPass" class="alert-danger rounded-sm  p-2 d-none">Password must be 5 charachters at least Cannot contain special charachters</p>
+              </div>        
+                <button disabled type="submit" onclick="Sign()" class="btn btn-info w-100" id="SignUp">Sign Up</button>
+            </div>
+            <p class="text-center mt-3 text-light">You have an account?<a href="signIn.html" class="text-light"> Signin</a> </p>
+            </div>
+          </div>
+             
+        </div>
+   
+  </header>
+
+
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
